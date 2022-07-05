@@ -1,7 +1,278 @@
-<h1>Hello World</h1>
-<p>testing</p>
-<ul>
-  <li>1. ok</li>
-  <li>2. mmh</li>
-</ul>
-<a href="folder1/page1">go to page1</a>
+<!DOCTYPE html>
+<html>
+<script src="/home/francois/Documents/sealab/static/js/bootstrap.bundle.min.js"></script>
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="/home/francois/Documents/sealab/static/css/main.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+  <style media="screen">
+    :root {
+      --accent-color: burlywood;
+    }
+    html {
+      size: 21cm 29.7cm;
+      margin: 30mm 45mm 30mm 45mm;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      gap: 1.5rem;
+      grid-template-areas:
+      'header header'
+      'experience skills'
+      'projects publications'
+      'education .';
+    }
+    #header {
+      border: none;
+      grid-area: header;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-areas:
+      'image name'
+      'image profile';
+    }
+    #image {
+      grid-area: image;
+    }
+    #subtitle {
+      color: var(--accent-color);
+    }
+    #publications {
+      grid-area: publications;
+    }
+    #projects {
+      grid-area: projects;
+    }
+    #name {
+      grid-area: name;
+    }
+    #profile {
+      grid-area: profile;
+    }
+    #experience {
+      grid-area: experience;
+    }
+    #skills {
+      grid-area: skills;
+    }
+    #education {
+      grid-area: education;
+    }
+
+    section {
+      padding: 1rem;
+      /* border-radius: 0.5rem; */
+      /* border: 1px solid #dee2e6; */
+    }
+
+    li h5{
+      color: var(--accent-color);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <section id="header">
+    <img class="img-fluid img-fluid rounded" src="/home/francois/Documents/Administratif/CV/Photo_CV3.png" id="image">
+    <div id="name">
+      <h1 class="display-3">Francois Duquesne</h1>
+      <p id="subtitle">Bioengeneer - Full stack developer - cool guy</p>
+    </div>
+    <section id="profile">
+      <h3>Profile</h3>
+      <p>Trilingual (english , spanish, french), dynamic and with great adaptability skills, I am a fast learner. Also, curious by nature and challenge driven, I’m allways passionate to find creative solutions to the problems I stumble uppon. My international background has given me the chance to explore different cultures and develop good comunication skills as well as an open and empathic mindset. Pasionate about the environment and computer sciences my aim is to contribute to the development of impactful solutions for the world of tomorow.</p>
+      <p><span class="fw-lighter me-2">email:</span>francois_duquesne@live.com</p>
+      <p><span class="fw-lighter me-2">tel:</span>(+32) 488 0582 45</p>
+    </section>
+  </section>
+
+
+  <section id="skills">
+  <h3>Skills</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h5>Hard</h5>
+      <p><span class="fw-lighter me-2">IT:</span>Django, Kubernetes, Git, Python, javascript, css, SQL, Matlab, R, bash, Latex</p>
+      <p><span class="fw-lighter me-2">Languages:</span>French, English, Spanish</p>
+      <p><span class="fw-lighter me-2">Scientific:</span>Geomatics (Qgis), data analysis</p>
+      <p><span class="fw-lighter me-2">DevOps:</span>Kubernetes, docker-compose, GitLab CICD, Azure, GCE, Google kubernetes Engine</p>
+    </li>
+    <li class="list-group-item">
+      <h5>Soft</h5>
+      <!-- <p><span class="fw-lighter me-2">IT:</span>Django, Kubernetes, Git</p> -->
+      <p>Problem solver, Resourcefull, Tolerance of change and uncertainty, Value education, Honesty</p>
+    </li>
+  </ul>
+  </section>
+
+  <section id="experience">
+    <h3>Experience</h3>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Research Support at UCLouvain, Earth and Life Institute</h5>
+          <div class="text-secondary">Contract</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2019</div>
+          <div class="col">Deepened my thesis work to yeild optimized results.</div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Gestion du Centre Ville - Ottignies Louvain-La-Neuve</h5>
+          <div class="text-secondary">Student Jobs</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2017-2018</div>
+          <div class="col">Worked in sales during the summer in "Louvain-la-Plage" and during winter in the Christmas market.</div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Nativeblooms</h5>
+          <div class="text-secondary">Internship</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2016</div>
+          <div class="col">Hands on experience working in one of the pioneering rose farms in Ecuador, better understanding of a business mindset. (1 month)</div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Yanapaqui</h5>
+          <div class="text-secondary">Volunteering</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2012</div>
+          <div class="col">Co-creator and active participant of a development project in Ecuador with the goal to provide better housing for poor communities in remote regions. (± 6 months)</div>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+  <section id="publications">
+    <h3>Publications</h3>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>M.Sc. Thesis</h5>
+          <div class="text-secondary">Python</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2019</div>
+          <div class="col">Modelling Lake Titicaca’s hydrodynamic and ecosystemic system to
+            assess the impact of anthropogenic contaminants on biodiversity.
+            Part of the Slim team in Earth and Life Institute (UCLouvain).
+            <!-- <a href="https://www.slim-ocean.be/index.php/contact/">https://www.slim-ocean.be/index.php/contact/</a> -->
+            </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section id="projects">
+    <h3>Projects</h3>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>M.Sc. Thesis</h5>
+          <div class="text-secondary">Python</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2019</div>
+          <div class="col">Modelling Lake Titicaca’s hydrodynamic and ecosystemic system to
+            assess the impact of anthropogenic contaminants on biodiversity.
+            Part of the Slim team in Earth and Life Institute (UCLouvain).</div>
+        </div>
+      </li>
+
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Search engine app</h5>
+          <div class="text-secondary">R and Shinyapps.io</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2018</div>
+          <div class="col">Leveraging Text mining techniques to implement a search engine
+            based on a PubMed database. And creation of a web-based app.
+            https://github.com/Option10/Text-Mining-with-Rtext-mining-app-with-lsa-lda-and-
+            pubmed-query-on-the-pubmed-abstracts-database</div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Licence plate reader</h5>
+          <div class="text-secondary">Python</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2018</div>
+          <div class="col">Leveraging Machine learning techniques (Keras) and image manip-
+            ulation for text recognition.
+            https://github.com/Option10/Deep-Learning—Plate-recognition</div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Modelisation of the 2014 Ebola outbreak in West Africa</h5>
+          <div class="text-secondary">MatLab</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2018</div>
+          <div class="col">Using cellular automata and Monte Carlo methods to simulate epidemic spatial progression.</div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="education">
+    <h3>Education</h3>
+
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>M.Sc. in Bioengineering</h5>
+          <div class="text-secondary">UCLouvain</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2019</div>
+          <div class="col">Major in environmental sciences and technologies,
+          specialization in Data analysis and management.</div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5>Bachelor’s degree in Bioengineering</h5>
+          <div class="text-secondary">UCLouvain</div>
+        </div>
+        <div class="row">
+          <div class="col-2">2017</div>
+          <div class="col">Louvain-la-Neuve, Belgium.</div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <h5>Shooling</h5>
+        <div class="row">
+          <div class="col">Lycée La Condamine (Franco-Ecuadorian High school)</div>
+          <div class="col">Quito, Ecuador.</div>
+        </div>
+        <div class="row">
+          <div class="col">Lycee Rochambeau (French High school)</div>
+          <div class="col">Washington D.C., USA.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>
