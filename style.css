@@ -1,0 +1,40 @@
+:root {
+  --accent-color: peru; // chocolate olive sienna peru burlywood
+}
+html {
+  size: 21cm 29.7cm;
+  margin: 30mm 45mm 30mm 45mm;
+}
+
+body {
+  display: grid;
+  /* grid-template-columns: 2fr 1fr; */
+  gap: 3rem;
+  grid-template-areas:
+  'header header header'
+  'experience experience skills'
+  'education projects projects'
+  'publications publications publications';
+}
+#header {grid-area: header;}
+#skills {grid-area: skills;}
+#experience {grid-area: experience;}
+#publications {grid-area: publications;}
+#projects {grid-area: projects;}
+#education {grid-area: education;}
+
+#subtitle {
+  color: var(--accent-color);
+}
+
+li h5{
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  padding-left: 1rem;
+}

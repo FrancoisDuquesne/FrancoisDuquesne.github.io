@@ -2,120 +2,45 @@
 <html>
 <script src="/home/francois/Documents/sealab/static/js/bootstrap.bundle.min.js"></script>
 <head>
-  <!-- <link rel="stylesheet" type="text/css" href="/home/francois/Documents/sealab/static/css/main.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-
-  <style media="screen">
-    :root {
-      --accent-color: burlywood;
-    }
-    html {
-      size: 21cm 29.7cm;
-      margin: 30mm 45mm 30mm 45mm;
-    }
-
-    body {
-      display: grid;
-      grid-template-columns: 4fr 1fr;
-      gap: 1.5rem;
-      grid-template-areas:
-      'header header'
-      'experience skills'
-      'projects publications'
-      'education .';
-    }
-    #header {
-      border: none;
-      grid-area: header;
-      display: grid;
-      gap: 1.5rem;
-      grid-template-areas:
-      'image name'
-      'image profile';
-    }
-    #image {
-      grid-area: image;
-    }
-    #subtitle {
-      color: var(--accent-color);
-    }
-    #publications {
-      grid-area: publications;
-    }
-    #projects {
-      grid-area: projects;
-    }
-    #name {
-      grid-area: name;
-    }
-    #profile {
-      grid-area: profile;
-    }
-    #experience {
-      grid-area: experience;
-    }
-    #skills {
-      grid-area: skills;
-    }
-    #education {
-      grid-area: education;
-    }
-
-    section {
-      padding: 1rem;
-      /* border-radius: 0.5rem; */
-      /* border: 1px solid #dee2e6; */
-    }
-
-    li h5{
-      color: var(--accent-color);
-    }
-
-    ul {
-      list-style: none;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="/home/francois/Documents/Github/FrancoisDuquesne.github.io/style.css">
 </head>
 
 <body>
 
-  <section id="header">
-    <img class="img-fluid img-fluid rounded" src="Photo_CV3.png" id="image">
-    <div id="name">
+  <section class="row align-items-end" id="header">
+    <div class="col-4">
+      <img class="img-fluid img-fluid rounded" src="Photo_CV3.png">
+    </div>
+    <section class="col">
       <h1 class="display-3">Francois Duquesne</h1>
       <p id="subtitle">Bioengeneer - Full stack developer - cool guy</p>
-    </div>
-    <section id="profile">
-      <h3>Profile</h3>
-      <p>Trilingual (english , spanish, french), dynamic and with great adaptability skills, I am a fast learner. Also, curious by nature and challenge driven, I’m allways passionate to find creative solutions to the problems I stumble uppon. My international background has given me the chance to explore different cultures and develop good comunication skills as well as an open and empathic mindset. Pasionate about the environment and computer sciences my aim is to contribute to the development of impactful solutions for the world of tomorow.</p>
+      <p>Trilingual, dynamic and with great adaptability skills, I am a fast learner. Also, curious by nature and challenge driven, I’m allways passionate to find creative solutions to the problems I stumble uppon. My international background has given me the chance to explore different cultures and develop good comunication skills as well as an open and empathic mindset. Pasionate about the environment and computer sciences my aim is to contribute to the development of impactful solutions for the world of tomorow.</p>
       <p><span class="fw-lighter me-2">email:</span>francois_duquesne@live.com</p>
       <p><span class="fw-lighter me-2">tel:</span>(+32) 488 0582 45</p>
     </section>
   </section>
 
-
   <section id="skills">
-  <h3>Skills</h3>
-  <ul class="list-group">
-    <li class="list-group-item">
-      <h5>Hard</h5>
-      <p><span class="fw-lighter me-2">IT:</span>Django, Kubernetes, Git, Python, javascript, css, SQL, Matlab, R, bash, Latex</p>
-      <p><span class="fw-lighter me-2">Languages:</span>French, English, Spanish</p>
-      <p><span class="fw-lighter me-2">Scientific:</span>Geomatics (Qgis), data analysis</p>
-      <p><span class="fw-lighter me-2">DevOps:</span>Kubernetes, docker-compose, GitLab CICD, Azure, GCE, Google kubernetes Engine</p>
-    </li>
-    <li class="list-group-item">
-      <h5>Soft</h5>
-      <!-- <p><span class="fw-lighter me-2">IT:</span>Django, Kubernetes, Git</p> -->
-      <p>Problem solver, Resourcefull, Tolerance of change and uncertainty, Value education, Honesty</p>
-    </li>
-  </ul>
+    <h2>Skills</h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h5>Hard</h5>
+        <p><span class="fw-lighter me-2">IT:</span>Django, Kubernetes, Git, Python, javascript, css, SQL, Matlab, R, bash, Latex</p>
+        <p><span class="fw-lighter me-2">Languages:</span>French, English, Spanish</p>
+        <p><span class="fw-lighter me-2">Scientific:</span>Geomatics (Qgis), data analysis</p>
+        <p><span class="fw-lighter me-2">DevOps:</span>Kubernetes, docker-compose, GitLab CICD, Azure, GCE, Google kubernetes Engine</p>
+      </li>
+      <li class="list-group-item">
+        <h5>Soft</h5>
+        <!-- <p><span class="fw-lighter me-2">IT:</span>Django, Kubernetes, Git</p> -->
+        <p>Problem solver, Resourcefull, Tolerance of change and uncertainty, Value education, Honesty</p>
+      </li>
+    </ul>
   </section>
 
   <section id="experience">
-    <h3>Experience</h3>
+    <h2>Experience</h2>
     <ul class="list-group">
       <li class="list-group-item">
         <div class="d-flex justify-content-between">
@@ -123,7 +48,7 @@
           <div class="text-secondary">Contract</div>
         </div>
         <div class="row">
-          <div class="col-2">2019</div>
+          <div class="col-2">2019 - 2022</div>
           <div class="col">Deepened my thesis work to yeild optimized results.</div>
         </div>
       </li>
@@ -133,7 +58,7 @@
           <div class="text-secondary">Student Jobs</div>
         </div>
         <div class="row">
-          <div class="col-2">2017-2018</div>
+          <div class="col-2">2017 - 2018</div>
           <div class="col">Worked in sales during the summer in "Louvain-la-Plage" and during winter in the Christmas market.</div>
         </div>
       </li>
@@ -162,26 +87,25 @@
   </section>
 
   <section id="publications">
-    <h3>Publications</h3>
+    <h2>Publications</h2>
     <ul class="list-group">
       <li class="list-group-item">
         <div class="d-flex justify-content-between">
-          <h5>M.Sc. Thesis</h5>
-          <div class="text-secondary">Python</div>
+          <h5>A coupled ecohydrodynamic model to predict algal blooms in Lake Titicaca</h5>
+          <div class="text-secondary">Scientific paper</div>
         </div>
         <div class="row">
-          <div class="col-2">2019</div>
-          <div class="col">Modelling Lake Titicaca’s hydrodynamic and ecosystemic system to
-            assess the impact of anthropogenic contaminants on biodiversity.
-            Part of the Slim team in Earth and Life Institute (UCLouvain).
-            <!-- <a href="https://www.slim-ocean.be/index.php/contact/">https://www.slim-ocean.be/index.php/contact/</a> -->
+          <div class="col-2">Jan 14, 2021</div>
+          <div class="col">Ecological Modelling
+            <!-- <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304380020304750?via%3Dihub">https://www.sciencedirect.com/science/article/abs/pii/S0304380020304750?via%3Dihub</a> -->
             </div>
         </div>
       </li>
     </ul>
   </section>
+
   <section id="projects">
-    <h3>Projects</h3>
+    <h2>Projects</h2>
     <ul class="list-group">
       <li class="list-group-item">
         <div class="d-flex justify-content-between">
@@ -204,9 +128,7 @@
         <div class="row">
           <div class="col-2">2018</div>
           <div class="col">Leveraging Text mining techniques to implement a search engine
-            based on a PubMed database. And creation of a web-based app.
-            https://github.com/Option10/Text-Mining-with-Rtext-mining-app-with-lsa-lda-and-
-            pubmed-query-on-the-pubmed-abstracts-database</div>
+            based on a PubMed database. And creation of a web-based app.</div>
         </div>
       </li>
       <li class="list-group-item">
@@ -217,8 +139,7 @@
         <div class="row">
           <div class="col-2">2018</div>
           <div class="col">Leveraging Machine learning techniques (Keras) and image manip-
-            ulation for text recognition.
-            https://github.com/Option10/Deep-Learning—Plate-recognition</div>
+            ulation for text recognition.</div>
         </div>
       </li>
       <li class="list-group-item">
@@ -236,7 +157,7 @@
   </section>
 
   <section id="education">
-    <h3>Education</h3>
+    <h2>Education</h2>
 
     <ul class="list-group">
       <li class="list-group-item">
@@ -262,13 +183,13 @@
       </li>
       <li class="list-group-item">
         <h5>Shooling</h5>
-        <div class="row">
-          <div class="col">Lycée La Condamine (Franco-Ecuadorian High school)</div>
-          <div class="col">Quito, Ecuador.</div>
+        <div class="d-flex justify-content-between">
+          <div>Lycée La Condamine (Franco-Ecuadorian High school)</div>
+          <div class="text-secondary">Quito, Ecuador.</div>
         </div>
-        <div class="row">
-          <div class="col">Lycee Rochambeau (French High school)</div>
-          <div class="col">Washington D.C., USA.</div>
+        <div class="d-flex justify-content-between">
+          <div>Lycee Rochambeau (French High school)</div>
+          <div class="text-secondary">Washington D.C., USA.</div>
         </div>
       </li>
     </ul>
