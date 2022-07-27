@@ -1,0 +1,49 @@
+var json_data = {
+  "name": " ",
+  "children": [
+  {
+    "name": "Front-end",
+    "color": "red",
+    "children": [
+      {"name": "HTML"},
+      {"name": "JS", "children": [{"name": "Ajax"},]},
+      {"name": "CSS", "children": [{"name": "Bootstrap"}, {"name": "D3.js"}]},
+      {"name": "Frameworks", "children": [{"name": "JQuerry",}]},
+    ]
+  },
+  {
+    "name": "Back-end",
+    "children": [
+      {"name": "Django", "children": [{"name": "models, views, templates, authentification, mails "}]},
+      {"name": "Databases", "children": [{"name": "SQLite"}, {"name": "Postgres"}]},
+      {"name": "Linux"},
+    ]
+  },
+  {
+    "name": "Scientific prog.",
+    "children": [
+      {"name": "Image processing"},
+      {"name": "Machine leraning, NN, Keras"},
+      {"name": "Data analysis"},
+      {"name": "Simulations"},
+      {"name": "HPC clusters"},
+      //{"name": "Automatic reporting"},
+    ]
+  },
+  {
+    "name": "Dev-Ops",
+    "children": [{"name": "Deployment automation (Gitlab pipelines)"},{"name": "Docker & docker-compose"}]
+  },
+  {
+    "name": "Infra",
+    "children": [
+      {"name": "Kubernetes",
+        "children": [
+          {"name": "GKE, GCE (Google)"},
+          {"name": "Azure"}
+        ]
+      },
+    ]
+  }
+  ]
+};
